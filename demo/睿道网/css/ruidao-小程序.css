@@ -1,0 +1,208 @@
+		ul{
+			list-style: none;
+		}
+		.topbar {
+		    height: 33px;
+		    line-height: 32px;
+		    background: #f2f2f2;
+		    border-bottom: 1px solid #e4e4e4;
+		}
+		.topbar_t {
+		    font-size: 12px;
+		    color: #888;
+		    float: left;
+		}
+		.topbar_r{
+			float:right;
+		}
+
+		.topbar_r .tel {
+		    font-size: 16px;
+		    color: #e6000d;
+		    padding: 0 15px;
+		    background: url(images/tel.png) 0 center no-repeat;
+		}
+		.topbar_r p {
+		    float: left;
+		    margin: 0;
+		    border-right: 1px solid #e4e4e4;
+		}
+
+		/*导航*/
+		.navbar-rd {
+		    padding-top: 35px;
+		    margin-bottom: 0;
+		    padding-bottom: 35px;
+		}
+		.nav {
+		    float: right;
+		    margin-right: -15px;
+		    padding-left: 0;
+		    margin-bottom: 0;
+		    list-style: none;
+		}
+		.nav>li {
+		    float: left;
+		    margin-left: 45px;
+		}
+		.nav>li>a {
+		    padding: 10px 0;
+		    line-height: 30px;
+		    font-size: 16px;
+		    color: #333;
+		    position: relative;
+		}
+		/*logo*/
+		.navbar-brand {
+		    padding: 0 15px;
+		}
+		.logo_txt {
+		    float: left;
+		    font-size: 12px;
+		    color: #999;
+		    padding-top: 8px;
+		    padding-left: 12px;
+		    line-height: 1.7;
+		    position: relative;
+		}
+		.logo_txt:after {
+		    content: "";
+		    width: 1px;
+		    height: 40px;
+		    background: #eee;
+		    position: absolute;
+		    left: 0;
+		    top: 6px;
+		}
+		.logo_txt i {
+		    display: inline-block;
+		    font-style: normal;
+		    padding: 0 6px;
+		    background: #ccc;
+		    color: #fff;
+		    border-radius: 5px;
+		    margin-right: 10px;
+		    line-height: 1.4;
+		}
+		.nav>li>a.active {
+		    color: #e5000c;
+		}
+		.nav>li>a:hover {
+		    background: none;
+		    color: #e5000c;
+		}
+		.nav>li>a:after {
+		    content: "";
+		    width: 0px;
+		    height: 2px;
+		    position: absolute;
+		    left: 0;
+		    bottom: 4px;
+		    transition: all 0.5s;
+		    /*-moz-transition: all 0.5s;
+		    -webkit-transition: all 0.5s;*/
+		}
+		.nav>li>a:hover:after {
+		    content: "";
+		    width: 32px;
+		    height: 2px;
+		    background: #e5000c;
+		    position: absolute;
+		    left: 0;
+		    bottom: 4px;
+		}
+		.nav>li>a.active:after {
+		    content: "";
+		    width: 32px;
+		    height: 2px;
+		    background: #e5000c;
+		    position: absolute;
+		    left: 0;
+		    bottom: 4px;
+		}
+		.navbar-default {
+		    padding-top: 35px;
+		    margin-bottom: 0;
+		    padding-bottom: 35px;
+		    background:none;
+		    border-color:transparent;
+		}
+
+
+		@media screen and (max-width: 767px){
+			.topbar {
+			    display: none;
+			}
+			.navbar-default {
+			    padding-top: 0;
+			    padding-bottom: 0;
+			}
+			.navbar-brand {
+			    padding: 13px 15px;
+			}
+			.navbar-brand img {
+			    height: 24px;
+			}
+			.logo_txt {
+			    display: none;
+			}
+			.nav>li {
+			    float: none;
+			    text-align: center;
+			    padding: 0;
+			    margin: 0;
+			}
+			.zhang{
+				padding: 0;
+				margin: 0;
+				width: 100%;
+			}
+			.nav>li>a {
+			    padding: 0;
+			    width: 100%;
+			    line-height: 45px;
+			    border-bottom: 1px solid #eee;
+			    font-size: 16px;
+			    color: #333;
+			    position: relative;
+			}
+			.nav>li>a:after {
+			    display: none;
+			    content: "";
+			    width: 0px;
+			    height: 2px;
+			    position: absolute;
+			    left: 0;
+			    bottom: 4px;
+			}
+		}
+		.sec_banner img {
+		    width: 100%;
+		}
+		.serviceNav {
+		    padding: 20px 0;
+		}
+		.serviceNav ul {
+		    text-align: center;
+		}
+		.serviceNav li {
+		    display: inline-block;
+		    margin: 0 5px;
+		}
+		.serviceNav li a {
+		    display: block;
+		    height: 30px;
+		    width: 110px;
+		    line-height: 28px;
+		    text-align: center;
+		    border: 1px solid #ddd;
+		    font-size: 14px;
+		    color: #333;
+		    text-decoration: none;
+		    border-radius: 15px;
+		}
+		.serviceNav li a.on, .serviceNav li a:hover {
+		    background: #e5000c;
+		    color: #fff;
+		    border: 1px solid #e5000c;
+		}
